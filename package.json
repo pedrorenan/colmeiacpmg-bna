@@ -5,8 +5,8 @@
   "name": "colmeiacpmg",
   "version": "0.0.1",
   "description": "Business Network Archive (bna) para o desafio prodemge blockchain cpmg 2017",
-  "networkImage": "https://hyperledger.github.io/composer-sample-networks/packages/basic-sample-network/networkimage.svg",
-  "networkImageanimated": "https://hyperledger.github.io/composer-sample-networks/packages/basic-sample-network/networkimageanimated.svg",
+  "networkImage": "https://pedrorenan.github.io/colmeiacpmg-bna/img/colmeia_symbol.svg",
+  "networkImageanimated": "https://pedrorenan.github.io/colmeiacpmg-bna/img/colmeia_symbol.svg",
   "scripts": {
     "prepublish": "mkdirp ./dist && composer archive create --sourceType dir --sourceName . -a ./dist/basic-sample-network.bna",
     "pretest": "npm run lint",
