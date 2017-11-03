@@ -10,7 +10,7 @@ asset PollenAsset identified by pollenId {
 }
 
 participant Bee identified by beeId {
-  o String participantId
+  o String beeId
   o String firstName
   o String lastName
   o String institutionName
