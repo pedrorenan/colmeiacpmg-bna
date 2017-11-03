@@ -2,26 +2,26 @@
  * Sample access control list.
  */
 rule EverybodyCanReadEverything {
-    description: "Allow all participants read access to all resources"
-    participant: "org.acme.sample.SampleParticipant"
+    description: "Allow all bees read access to all resources"
+    participant: "br.com.colmeiacpmg.Bee"
     operation: READ
-    resource: "org.acme.sample.*"
+    resource: "br.com.colmeiacpmg.*"
     action: ALLOW
 }
 
 rule EverybodyCanSubmitTransactions {
-    description: "Allow all participants to submit transactions"
-    participant: "org.acme.sample.SampleParticipant"
+    description: "Allow all bees to submit transactions"
+    participant: "br.com.colmeiacpmg.Bee"
     operation: CREATE
-    resource: "org.acme.sample.SampleTransaction"
+    resource: "br.com.colmeiacpmg.PollenTransaction"
     action: ALLOW
 }
 
 rule OwnerHasFullAccessToTheirAssets {
-    description: "Allow all participants full access to their assets"
-    participant(p): "org.acme.sample.SampleParticipant"
+    description: "Allow all bees full access to their assets"
+    participant(p): "br.com.colmeiacpmg.Bee"
     operation: ALL
-    resource(r): "org.acme.sample.SampleAsset"
+    resource(r): "br.com.colmeiacpmg.PollenAsset"
     condition: (r.owner.getIdentifier() === p.getIdentifier())
     action: ALLOW
 }
